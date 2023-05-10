@@ -111,7 +111,7 @@ article p {
     padding-bottom: 5px;
 }
 
-article span {
+.link-list {
     display: flex;
     justify-content: space-evenly;
 }
@@ -128,6 +128,76 @@ article a:hover {
 
 /* Stylize the article images */
 
-article img {
-    
+.code-images {
+    display: flex;
+    width:80%;
+    height: 300px;
+    background-image: url('images/work-01.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    outline: 10px solid var(--dark);
+    margin: 20px auto;
+    position: relative;
+}
+
+.titles {
+    margin: 10px auto;
+    position: absolute;
+    bottom: 20px;
+    padding: 10px 5px 5px 20px;
+    background-color:var(--dark);
+    color:var(--black);
+}
+
+article h3 {
+    font-weight: bolder;
+    font-size: 24px;
+    line-height: 5px;
+}
+
+article h4 {
+    font-size: 16px;
+}
+
+.inline-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;
+    width: 80%;
+    height:200px;
+}
+
+.code-images-02 {
+    display: flex;
+    width:45%;
+    height: 85%;
+    background-image: url('images/work-02.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    outline: 10px solid var(--dark);
+    position: relative;
+}
+
+.code-images-03 {
+    display: flex;
+    width:45%;
+    height: 85%;
+    background-image: url('images/work-03.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    outline: 10px solid var(--dark);
+    position: relative;
+}
+
+/* Attributes for the footer */
+footer {
+    display:flex;
+    width: 100%;
+    height: 50px;
+    background-color: var(--black);
+    align-items: center;
+    justify-content: center;
+    color: var(--dark);
+    margin-top: 20px;
 }
