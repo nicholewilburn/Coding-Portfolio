@@ -37,6 +37,7 @@ header a {
 header a:hover {
     text-decoration: none;
     color: var(--dark);
+    background-color: var(--black);
 }
 
 /* Figure Properties */
@@ -128,16 +129,24 @@ article a:hover {
 
 /* Stylize the article images */
 
-.code-images {
+.work-images {
     display: flex;
-    width:80%;
-    height: 300px;
-    background-image: url('images/work-01.jpg');
     background-position: center;
     background-repeat: no-repeat;
     outline: 10px solid var(--dark);
-    margin: 20px auto;
     position: relative;
+    transition: filter 2s;
+}
+
+.big {
+    width:80%;
+    height: 300px;
+    margin: 20px auto;
+}
+
+.small {
+    width:45%;
+    height: 85%;
 }
 
 .titles {
@@ -168,27 +177,32 @@ article h4 {
     height:200px;
 }
 
-.code-images-02 {
-    display: flex;
-    width:45%;
-    height: 85%;
-    background-image: url('images/work-02.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    outline: 10px solid var(--dark);
-    position: relative;
+.work-images:hover {
+    filter: brightness(1.5);
 }
 
-.code-images-03 {
-    display: flex;
-    width:45%;
-    height: 85%;
-    background-image: url('images/work-03.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    outline: 10px solid var(--dark);
-    position: relative;
+.work-images a {
+    width:100%;
+    height:100%;
+    z-index: 10;
 }
+
+#i01 {
+    background-image: url('images/work-01.jpg');
+}
+#i02 {
+    background-image: url('images/work-02.jpg');
+}
+#i03 {
+    background-image: url('images/work-03.jpg');
+}
+#i04 {
+    background-image: url('images/work-04.jpg');
+}
+#i05 {
+    background-image: url('images/work-05.jpg');
+}
+
 
 /* Attributes for the footer */
 footer {
@@ -199,5 +213,5 @@ footer {
     align-items: center;
     justify-content: center;
     color: var(--dark);
-    margin-top: 20px;
+    margin-top: 50px;
 }
